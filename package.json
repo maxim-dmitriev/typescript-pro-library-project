@@ -4,7 +4,8 @@
   "description": "<h1 align=\"center\"> <img width=\"40\" valign=\"bottom\" src=\"https://cloud.githubusercontent.com/assets/10656223/15247118/e71dc6a2-1909-11e6-9b90-ae86204f41c3.png\"> TypeScript Pro: Final Library Project </h1> <h4 align=\"center\">A micro library written from scratch to take advantage of the power of TypeScript</h4>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/maxim-dmitriev/typescript-pro-library-project#readme",
   "devDependencies": {
+    "@types/node": "^12.12.5",
     "typescript": "^3.6.4"
   }
 }
