@@ -1,24 +1,38 @@
 {
-  "name": "typescript-pro-library-project",
-  "version": "1.0.0",
-  "description": "<h1 align=\"center\"> <img width=\"40\" valign=\"bottom\" src=\"https://cloud.githubusercontent.com/assets/10656223/15247118/e71dc6a2-1909-11e6-9b90-ae86204f41c3.png\"> TypeScript Pro: Final Library Project </h1> <h4 align=\"center\">A micro library written from scratch to take advantage of the power of TypeScript</h4>",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc -p tsconfig.json"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/maxim-dmitriev/typescript-pro-library-project.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/maxim-dmitriev/typescript-pro-library-project/issues"
-  },
-  "homepage": "https://github.com/maxim-dmitriev/typescript-pro-library-project#readme",
-  "devDependencies": {
-    "@types/node": "^12.12.5",
-    "typescript": "^3.6.4"
-  }
+	"name": "typescript-pro-library-project",
+	"version": "1.0.0",
+	"description": "<h1 align=\"center\"> <img width=\"40\" valign=\"bottom\" src=\"https://cloud.githubusercontent.com/assets/10656223/15247118/e71dc6a2-1909-11e6-9b90-ae86204f41c3.png\"> TypeScript Pro: Final Library Project </h1> <h4 align=\"center\">A micro library written from scratch to take advantage of the power of TypeScript</h4>",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest",
+		"test:watch": "npm test -- --watch",
+		"build": "tsc -p tsconfig.json"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/maxim-dmitriev/typescript-pro-library-project.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/maxim-dmitriev/typescript-pro-library-project/issues"
+	},
+	"homepage": "https://github.com/maxim-dmitriev/typescript-pro-library-project#readme",
+	"devDependencies": {
+		"@types/jest": "^24.0.21",
+		"@types/node": "^12.12.5",
+		"jest": "^24.9.0",
+		"ts-jest": "^24.1.0",
+		"typescript": "^3.6.4"
+	},
+	"jest": {
+		"moduleFileExtensions": [
+			"ts",
+			"js"
+		],
+		"transform": {
+			".ts": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+		},
+		"testRegex": ".*\\.spec\\.ts$"
+	}
 }
